@@ -1,6 +1,5 @@
-// config.mjs
-export default {
-  development: {
+{
+  "development": {
     "username": "piyush",
     "password": "P_dixit2004",
     "database": "socialMedia_db",
@@ -8,17 +7,17 @@ export default {
     "dialect": "mysql"
   },
   "test": {
-    "username": "piyush",
-    "password": "P_dixit2004",
-    "database": "socialMedia_db",
+    "username": "root",
+    "password": null,
+    "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "piyush",
-    "password": "P_dixit2004",
-    "database": "socialMedia_db",
+    "username": "root",
+    "password": null,
+    "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
-};
+}
