@@ -1,1 +1,5 @@
-export const getUser = (req, res) => {};
+const getUser = (req, res) => {};
+
+module.exports = {
+  getUser,
+};

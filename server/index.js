@@ -1,14 +1,22 @@
-import Express from "express";
+const express = require("express");
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
 
-const app = Express();
+const app = express();
 const PORT = 5555;
 
-import db from "./models/index.js";
-import userRoutes from "./routes/users.js";
-import postRoutes from "./routes/posts.js";
-import commentRoutes from "./routes/comments.js";
-import likeRoutes from "./routes/likes.js";
-import authRoutes from "./routes/auth.js";
+const db = require("./models/index");
+
+const userRoutes = require("./routes/users.js");
+const postRoutes = require("./routes/posts.js");
+const commentRoutes = require("./routes/comments.js");
+const likeRoutes = require("./routes/likes.js");
+const authRoutes = require("./routes/auth.js");
+
+//middleware
+app.use(express.json());
+app.use(cors());
+app.use(cookieParser());
 
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);

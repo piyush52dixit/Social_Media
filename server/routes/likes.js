@@ -1,7 +1,8 @@
-import express from "express";
-import {} from "../controllers/likes.js";
+const express = require("express");
+const {} = require("../controllers/likes.js");
+
 const router = express.Router();
 
-router.get("");
+router.get(""); // Replace someFunction with the actual function you want to use
 
-export default router;
+module.exports = router;
